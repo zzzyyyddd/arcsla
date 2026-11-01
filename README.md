@@ -93,6 +93,24 @@ Offline tests: `bun run test` (network configuration, Create-form deadline/amoun
 
 The app includes a step-by-step page at `/demo/live` for running a verified release and a deadline refund on Arc Testnet with your own wallets. It never signs or sends anything by itself. After you finish, `bun run scripts/record-live-evidence.ts` reads the receipts and logs from the chain and writes them to `docs/TESTNET_ADVERSARIAL_EVIDENCE.md`.
 
+## Arc Mainnet — Verified & Published Source Code (1 November 2026)
+
+**Verification status: Verified — Exact Match (Blockscout).**
+
+The deployed ArcSLA smart contract source code has been publicly verified and published on Arc Mainnet Explorer.
+
+- **Contract:** `0x5F040Bc617666359C543bfFbE25DD00c4FfCbdAC`
+- **Verified source:** [Arc Mainnet Explorer](https://explorer.arc.io/address/0x5F040Bc617666359C543bfFbE25DD00c4FfCbdAC?tab=contract)
+- **Compiler:** Solidity `v0.8.28+commit.7893614a`
+- **EVM version:** `cancun`
+- **Optimizer:** enabled, 200 runs
+- **License:** MIT
+- **Constructor argument:** Arc Mainnet USDC (`0x3600000000000000000000000000000000000000`)
+- **Verification method:** Solidity Standard JSON Input
+- **Result:** Contract source code verified (**exact match**)
+
+This confirms that the published source code reproduces the deployed contract bytecode under the verified compiler configuration. Source verification is not an independent security audit.
+
 ## Verified Arc Mainnet deployment and evidence (31 October 2026)
 
 ArcSLA is deployed on **Arc Mainnet (chain ID 5042)** at [`0x5F040Bc617666359C543bfFbE25DD00c4FfCbdAC`](https://explorer.arc.io/address/0x5F040Bc617666359C543bfFbE25DD00c4FfCbdAC), deployment block `28741163`. Official Arc Mainnet USDC: `0x3600000000000000000000000000000000000000`.

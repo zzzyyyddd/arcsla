@@ -42,6 +42,24 @@ The Arc Studio project is available through the link above for organizer review.
 
 The source code was exported from Arc Studio and published to GitHub. The public application is deployed on Vercel.
 
+## Arc Mainnet — Verified & Published Source Code (1 November 2026)
+
+**Verification status: Verified — Exact Match (Blockscout).**
+
+The deployed ArcSLA smart contract source code has been publicly verified and published on Arc Mainnet Explorer.
+
+- **Contract:** `0x5F040Bc617666359C543bfFbE25DD00c4FfCbdAC`
+- **Verified source:** [Arc Mainnet Explorer](https://explorer.arc.io/address/0x5F040Bc617666359C543bfFbE25DD00c4FfCbdAC?tab=contract)
+- **Compiler:** Solidity `v0.8.28+commit.7893614a`
+- **EVM version:** `cancun`
+- **Optimizer:** enabled, 200 runs
+- **License:** MIT
+- **Constructor argument:** Arc Mainnet USDC (`0x3600000000000000000000000000000000000000`)
+- **Verification method:** Solidity Standard JSON Input
+- **Result:** Contract source code verified (**exact match**)
+
+This confirms that the published source code reproduces the deployed contract bytecode under the verified compiler configuration. Source verification is not an independent security audit.
+
 ## 4. Verified Arc Mainnet Evidence
 
 **Network:** Arc Mainnet  
