@@ -157,3 +157,39 @@ ArcSLA demonstrates:
 - Explicit documentation of trust assumptions and security limitations.
 
 **The central achievement is not merely displaying blockchain transactions, but connecting a complete service-payment lifecycle to verifiable onchain settlement and refund evidence.**
+
+## Arc Mainnet — Visual Evidence
+
+The screenshots below document real Arc Mainnet transactions on 31 October 2026. Screenshots are historical captures; verify the latest state using the live app and explorer links.
+
+### 1. Settlement dashboard
+
+![ArcSLA Mainnet dashboard: two agreements, 0.01 USDC released, 0.01 USDC refunded, no active escrow](images/arcsla-mainnet-dashboard.png)
+
+### 2. Public agreement explorer
+
+![ArcSLA public explorer showing Agreement #1 released and Agreement #2 refunded](images/arcsla-mainnet-explorer.png)
+
+### 3. Agreement #1 — escrow funded
+
+![Successful Mainnet funding transaction for Agreement #1](images/06-agreement-1-funding-explorer-success.png)
+
+### 4. Agreement #1 — provider paid
+
+![Successful Mainnet release transaction transferring 0.01 USDC to the provider](images/10-agreement-1-release-arc-explorer.png)
+
+[Verify release on Arc Explorer](https://explorer.arc.io/tx/0x5aee3380c1c68652e7eca03a7b16bda20617976f90d6d99aa0bed46232f5ad5d)
+
+### 5. Agreement #2 — refunded to customer
+
+![Agreement #2 refunded status and onchain timeline in ArcSLA](images/arcsla-mainnet-agreement-2-refunded.png)
+
+![Successful Mainnet refund transaction transferring 0.01 USDC back to the customer](images/arcsla-mainnet-refund-arc-explorer.png)
+
+[Verify refund on Arc Explorer](https://explorer.arc.io/tx/0x6abb3325713d120d1ad1a3949be3ba8df9a26c75b03a957735d2ef5f1245afb6)
+
+### 6. Guided Demo — 9/9
+
+![Guided Demo showing eight onchain-verified steps and one browser-local read-only InvalidSigner rejection test](images/arcsla-mainnet-guided-demo-9-of-9.png)
+
+**Evidence distinction:** Steps 1–8 are reconstructed from onchain state, events and receipts. Step 9 is a browser-local result from a read-only `eth_call` simulation, **not** an onchain rejection transaction. The simulation shows the modified signature rejected with `InvalidSigner`; no gas or funds were spent.
