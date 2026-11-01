@@ -4,6 +4,13 @@ ArcSLA is a programmable USDC settlement protocol for digital services on Arc. A
 
 Built with [Arc Studio](https://studio.arc.io)
 
+## Judge Quick Start
+
+For ARC Microgrants Round 2 reviewers, see the
+**[ArcSLA Judge Guide](docs/JUDGE_GUIDE.md)** for the
+Arc Studio project, live application, verified Arc Mainnet
+transactions, Guided Demo instructions, and security limitations.
+
 ## What it does
 
 - **Create and fund** an agreement: provider, trusted verifier, USDC amount, deadline and a hash of the service specification. The exact amount moves into escrow in the same transaction.
