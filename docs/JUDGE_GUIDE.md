@@ -18,7 +18,7 @@ The protocol provides verifiable payment execution and transparent settlement ev
 
 | Resource | Link |
 |---|---|
-| Arc Studio project | https://studio.arc.io/app/03513f4f-bb9b-478e-bcce-4c02cb31d36a |
+| Arc Studio project | https://studio.arc.io/share/arcsla-verifiable-service-settlement-protocol-r4a9ukze9h |
 | Live application | https://arc-studio-03513f4fbb9b478ebcce4c02.vercel.app/ |
 | Mainnet Guided Demo | https://arc-studio-03513f4fbb9b478ebcce4c02.vercel.app/demo?network=mainnet |
 | Source repository | https://github.com/zzzyyyddd/arcsla |

@@ -125,7 +125,7 @@ ArcSLA is deployed on **Arc Mainnet (chain ID 5042)** at [`0x5F040Bc617666359C54
 - **Signature rejection:** the Guided Demo performs a read-only simulation with a tampered signature, which returns `InvalidSigner` when evaluated with an Active-state override. This is **not** an onchain rejection transaction; step 9 is recorded in each visitor's browser.
 
 **Public app:** https://arc-studio-03513f4fbb9b478ebcce4c02.vercel.app/  
-**Arc Studio project:** https://studio.arc.io/app/03513f4f-bb9b-478e-bcce-4c02cb31d36a
+**Arc Studio project:** https://studio.arc.io/share/arcsla-verifiable-service-settlement-protocol-r4a9ukze9h
 
 The verifier is trusted; a valid signature does not independently prove service delivery. The contracts have not had an independent professional audit. Mainnet UI limits (0.01 USDC per agreement, at most 2 hours) are frontend restrictions, **not** enforced by the contract. No additional mainnet transactions are needed to inspect the demo.
 
