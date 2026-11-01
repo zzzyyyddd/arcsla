@@ -95,6 +95,11 @@ The app includes a step-by-step page at `/demo/live` for running a verified rele
 
 ## Arc Mainnet — Verified & Published Source Code (1 November 2026)
 
+![ArcSLA Mainnet verified source code](docs/images/arcsla-mainnet-source-verified.png)
+
+*Arc Mainnet Explorer (Blockscout): Contract source code verified — exact match.*
+
+
 **Verification status: Verified — Exact Match (Blockscout).**
 
 The deployed ArcSLA smart contract source code has been publicly verified and published on Arc Mainnet Explorer.

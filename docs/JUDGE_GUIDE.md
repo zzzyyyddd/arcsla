@@ -44,6 +44,11 @@ The source code was exported from Arc Studio and published to GitHub. The public
 
 ## Arc Mainnet — Verified & Published Source Code (1 November 2026)
 
+![ArcSLA Mainnet verified source code](images/arcsla-mainnet-source-verified.png)
+
+*Arc Mainnet Explorer (Blockscout): Contract source code verified — exact match.*
+
+
 **Verification status: Verified — Exact Match (Blockscout).**
 
 The deployed ArcSLA smart contract source code has been publicly verified and published on Arc Mainnet Explorer.
