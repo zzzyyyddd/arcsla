@@ -1,0 +1,22 @@
+[
+  {
+    "agreementId": "4", "kind": "earlyRefund", "outcome": "RefundNotAvailable", "atChainTime": 0, "source": "reported",
+    "note": "Reported by the project owner. Corroboration: the app's trace log holds one reverted browser eth_call, refund(4) from the customer wallet 0xCfEf…72A6, sent about 100 s after the agreement was created (before the deadline). The trace stores no revert data, so the error name comes from replaying that exact calldata read-only against a copy of #4 forced back to Active (state override, chain time createdAt+300): RefundNotAvailable."
+  },
+  {
+    "agreementId": "4", "kind": "wrongSigner", "outcome": "InvalidSigner", "atChainTime": 0, "source": "reported",
+    "note": "Reported by the project owner. Corroboration: one reverted browser eth_call, release(4, …) from the customer wallet 0xCfEf…72A6. Recovering the EIP-712 signer from its calldata gives 0xCfEf…72A6, which is not the verifier. Replaying the exact calldata against the Active copy of #4 (state override): InvalidSigner."
+  },
+  {
+    "agreementId": "4", "kind": "tampered", "outcome": "InvalidSigner", "atChainTime": 0, "source": "reported",
+    "note": "Reported by the project owner. Corroboration: one reverted browser eth_call, release(4, …) from the verifier wallet 0x6576…0dc3 whose signature recovers to 0xBc58…97d6, which is not the verifier (consistent with a tampered signature; the trace does not record which button produced it). Replaying the exact calldata against the Active copy of #4 (state override): InvalidSigner."
+  },
+  {
+    "agreementId": "4", "kind": "validAccepted", "outcome": "accepted", "atChainTime": 0, "source": "reported",
+    "note": "Reported by the project owner. No successful eth_call for this check is present in the trace file (the file is size-capped and older entries are evicted). The valid signature is independently proven onchain by the successful release transaction."
+  },
+  {
+    "agreementId": "4", "kind": "duplicateRelease", "outcome": "AgreementNotActive", "atChainTime": 0, "source": "reported",
+    "note": "Reported by the project owner. No matching call is present in the trace file. The same result was independently reproduced by this script as a live read-only eth_call against the Released agreement (see T1.6)."
+  }
+]

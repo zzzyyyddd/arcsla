@@ -1,0 +1,14 @@
+# ArcSLA Arc Mainnet deployment package checksums
+# Regenerate with: scripts/export-deploy-package.sh  (after: forge build)
+constructor_argument_usdc            0x3600000000000000000000000000000000000000
+solc                                 0.8.28+commit.7893614a
+evm_version                          cancun
+optimizer                            {"enabled":true,"runs":200}
+libraries                            {}
+ArcSLA.sol_sha256                    3002abab63b21a7bc525d4953d4b13c83612f3d8c300525737c98e56f11f8730
+creation-bytecode.hex                bytes=6997   sha256(bytes)=65d7b89cd39ace87d6fbc142453d2bcf1033cd3e3b0dd09b8aca67acabd86d05 keccak256=0xc02649f4e600b82612f426abc84f9185ef3d63c309d4cebbc76b13875ebdac09 text_sha256=8d424b945eee5b15405c728b30fd07686af03f35ae6aa2e8804be141abd0d963
+constructor-args.hex                 bytes=32     sha256(bytes)=9f2b3b216306afa16d861db7be0cf7f4dd7f344f75658e79d1ae01f2dddb4bcb keccak256=0x8d10b21eaf50beeb020d78f30e2d9eb301c0a544359ec412daa7f8d2a07248d7 text_sha256=ac350dd9b8feb5a144ca102b6099e5000d71c4c77f133bb7a7ce7707ac69f3a0
+deploy-data.hex                      bytes=7029   sha256(bytes)=ac6db2c9ef94428a99e70aa403bc118aa73acd51ee3d8ee530588ecd8fee3d95 keccak256=0x703740bf7eb34907b35ade3db9d7bab72833095d085f5ade407e6195b22c2ade text_sha256=8aeb6e647eb538ead34a8b50206ddf571c530d0840a8567ae76343731f1d6bfb
+runtime-bytecode.hex                 bytes=5898   sha256(bytes)=a90ee98b897385670eb8eb555b242e88c95ade3b8d8e9a6e7ed76306c8a5d169 keccak256=0x6c35f8e3c83e824e7936a37daa5c465e60edddfdebc122007fa1bdd87efe10af text_sha256=e1bcd3283d5abfbd7a031d1702d481bb84e497e9edc6ba014da1a3226512491e
+build-settings.json_sha256           e94520f309ef7775700ea8c2dd1fad87e598c7ad2da4670f0bad201cf53ededc
+immutable-references.json_sha256     1e98ba1fa24c19cc17db4f36a048d952c7f543a046d3a954b52a339312a33384

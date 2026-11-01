@@ -1,0 +1,39 @@
+{
+  "compilationTarget": {
+    "contracts/ArcSLA.sol": "ArcSLA"
+  },
+  "compiler": {
+    "version": "0.8.28+commit.7893614a"
+  },
+  "constructorAbi": [
+    {
+      "inputs": [
+        {
+          "internalType": "contract IERC20",
+          "name": "usdc_",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    }
+  ],
+  "creationLinkReferences": {},
+  "language": "Solidity",
+  "runtimeLinkReferences": {},
+  "settings": {
+    "evmVersion": "cancun",
+    "libraries": {},
+    "metadata": {
+      "bytecodeHash": "ipfs"
+    },
+    "optimizer": {
+      "enabled": true,
+      "runs": 200
+    },
+    "remappings": [
+      "@openzeppelin/contracts/=node_modules/@openzeppelin/contracts/",
+      "forge-std/=lib/forge-std/src/"
+    ]
+  }
+}
