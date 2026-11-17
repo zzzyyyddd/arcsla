@@ -44,8 +44,8 @@ bun run dev
   - Deploy tx: `0xa94ee19a400f3c863362c0fbab49cf40abbef7772bb8d5a1c02210bd214df0c6`, block 69654812
   - Explorer: https://explorer.testnet.arc.io/address/0x2c4283d953c8d5141f47ea8ab74d9fb2a7831b47
   - Deployed from the shared platform wallet; ArcSLA has no owner, so that wallet holds no rights.
-  - Frontend contract addresses live in `src/lib/networks.ts` (one entry per network). Mainnet ArcSLA `0x5F040Bc617666359C543bfFbE25DD00c4FfCbdAC`, block 28741163, creation tx `0x25c9ec657b34e9c91a7c4a836b9b5352a0b0cfb7472071ca26da0289db1e7e66` (read-only verified 2026-10-31: exact reviewed bytecode, usdc() and EIP-712 domain correct, agreementCount 0). The mainnet escrow lifecycle is NOT yet verified.
+  - Frontend contract addresses live in `src/lib/networks.ts`. Mainnet ArcSLA `0x5F040Bc617666359C543bfFbE25DD00c4FfCbdAC`, block 28741163, creation tx `0x25c9ec657b34e9c91a7c4a836b9b5352a0b0cfb7472071ca26da0289db1e7e66`. A subsequent 0.01 USDC release and a separate 0.01 USDC refund are documented in `docs/CURRENT_STATUS.md`.
 
 ## Mainnet status
 
-Preparation only. Nothing is deployed on Arc Mainnet. `contracts/script/DeployArcSLA.s.sol` accepts only Arc Testnet/Mainnet and the official USDC address; mainnet needs `ARCSLA_MAINNET_CONFIRM`. The frontend defaults to Arc Testnet; on mainnet it shows a real-funds warning and blocks all transactions until the contract is verified onchain and the warning is acknowledged. See `docs/MAINNET_DEPLOYMENT.md` and `docs/DEPLOYMENT_READINESS.md`.
+ArcSLA is deployed on Arc Mainnet with recorded USDC release and refund transactions. It remains an unaudited MVP, not a production-security certification. The frontend defaults to Arc Testnet; mainnet mode includes real-funds warnings and transaction guards. See `docs/CURRENT_STATUS.md` for current evidence. Deployment preparation documents are historical snapshots.

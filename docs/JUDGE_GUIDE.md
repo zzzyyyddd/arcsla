@@ -4,6 +4,8 @@
 
 Built with Arc Studio | Arc Mainnet | USDC Escrow | EIP-712 Attestations
 
+> **For Circle Developer Grants reviewers:** Start with [current status](CURRENT_STATUS.md) and the [Circle Grants brief](CIRCLE_GRANTS.md). The current Circle-relevant integration is USDC on Arc; Circle Wallets and developer SDK/API are proposed milestones, not existing features. No independent professional audit or external customer traction is claimed.
+
 ## 1. Project Overview
 
 ArcSLA is a programmable USDC escrow protocol for digital services built with Arc Studio.

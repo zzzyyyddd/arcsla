@@ -1,5 +1,8 @@
 # Deploying ArcSLA to Arc Mainnet from Ubuntu WSL (manual procedure)
 
+> **HISTORICAL SNAPSHOT — CURRENT STATUS:** This document preserves preparation-time statements and test observations. They are not a description of today's deployment. ArcSLA was subsequently deployed on Arc Mainnet and demonstrated a 0.01 USDC [release](https://explorer.arc.io/tx/0x5aee3380c1c68652e7eca03a7b16bda20617976f90d6d99aa0bed46232f5ad5d) and a separate 0.01 USDC [refund](https://explorer.arc.io/tx/0x6abb3325713d120d1ad1a3949be3ba8df9a26c75b03a957735d2ef5f1245afb6). See [current status](CURRENT_STATUS.md). The lack of an independent professional audit remains unchanged.
+
+
 > Warning: Transactions on mainnet involve real funds and, once submitted, are irreversible. Arc Studio does not deploy to, transact on, sign for, fund, or otherwise interact with mainnet on your behalf. You run every command below yourself, on your own machine, outside Arc Studio, and you are solely responsible for the outcome. ArcSLA has had no independent professional audit. See `docs/MAINNET_READINESS_AUDIT.md` and `docs/MAINNET_POC_RUNBOOK.md`.
 
 Nothing in this document has been executed against mainnet by Arc Studio. The helper script `scripts/mainnet-deploy.sh` was only run in its `dry` mode (read-only checks plus a non-broadcast simulation) from the Arc Studio sandbox to check that it works.

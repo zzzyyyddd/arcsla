@@ -1,6 +1,6 @@
 # ArcSLA Arc Mainnet deployment record (template)
 
-PUBLIC data only. Never write a private key, seed phrase, keystore password or API secret here. The deployment section below was filled in on 2026-10-31 from READ-ONLY chain reads (`scripts/verify-deploy.sh --tx …` passed every check: direct creation, input byte-for-byte equal to the reviewed deploy data, address derived from sender and nonce 0, runtime code equal to the reviewed runtime bytecode, `usdc()` and the EIP-712 domain correct). The proof-of-concept agreement section is still blank: no mainnet agreement has been created, so the mainnet escrow lifecycle is NOT verified.
+PUBLIC data only. Never write a private key, seed phrase, keystore password or API secret here. The deployment section below was filled in on 2026-10-31 from READ-ONLY chain reads (`scripts/verify-deploy.sh --tx …` passed every check: direct creation, input byte-for-byte equal to the reviewed deploy data, address derived from sender and nonce 0, runtime code equal to the reviewed runtime bytecode, `usdc()` and the EIP-712 domain correct). The original proof-of-concept template remains blank as a historical snapshot; subsequent real mainnet settlement and refund evidence is recorded below.
 
 | Item | Value |
 | --- | --- |
@@ -34,3 +34,13 @@ PUBLIC data only. Never write a private key, seed phrase, keystore password or A
 | Final status read from the contract | |
 
 The Arc Testnet deployment (0x2C4283d953C8D5141F47eA8AB74d9FB2A7831B47, chain 5042002) and its evidence are separate and unchanged. Never reuse that address on mainnet.
+
+
+## Subsequent mainnet lifecycle evidence (31 October 2026)
+
+The empty proof-of-concept template above and the `agreementCount()` snapshot are retained as historical records, not the latest state.
+
+- Agreement #1: **Released**, 0.01 USDC transferred to the provider: https://explorer.arc.io/tx/0x5aee3380c1c68652e7eca03a7b16bda20617976f90d6d99aa0bed46232f5ad5d
+- Agreement #2: **Refunded**, 0.01 USDC returned to the customer after the deadline: https://explorer.arc.io/tx/0x6abb3325713d120d1ad1a3949be3ba8df9a26c75b03a957735d2ef5f1245afb6
+
+See [current status](CURRENT_STATUS.md) and [Judge Guide](JUDGE_GUIDE.md) for the evidence and limitations.

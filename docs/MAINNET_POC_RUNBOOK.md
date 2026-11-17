@@ -1,5 +1,8 @@
 # ArcSLA controlled mainnet proof of concept (0.01 USDC): preparation and checklist
 
+> **HISTORICAL SNAPSHOT — CURRENT STATUS:** This document preserves preparation-time statements and test observations. They are not a description of today's deployment. ArcSLA was subsequently deployed on Arc Mainnet and demonstrated a 0.01 USDC [release](https://explorer.arc.io/tx/0x5aee3380c1c68652e7eca03a7b16bda20617976f90d6d99aa0bed46232f5ad5d) and a separate 0.01 USDC [refund](https://explorer.arc.io/tx/0x6abb3325713d120d1ad1a3949be3ba8df9a26c75b03a957735d2ef5f1245afb6). See [current status](CURRENT_STATUS.md). The lack of an independent professional audit remains unchanged.
+
+
 > **Update (2026-10-31):** network and contract selection changed. The app now registers each network's contract in `src/lib/networks.ts` and selects the network with `?network=`, the header selector or `VITE_DEFAULT_NETWORK`. See `docs/NETWORK_CONFIGURATION.md`. Where this document mentions `VITE_ARCSLA_ADDRESS`, read it as that registry.
 
 

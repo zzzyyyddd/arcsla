@@ -4,6 +4,10 @@ ArcSLA is a programmable USDC settlement protocol for digital services on Arc. A
 
 Built with [Arc Studio](https://studio.arc.io)
 
+## Current status and Circle Grants
+
+ArcSLA is an Arc Mainnet USDC settlement **MVP** with publicly documented release and refund transactions. See the [current status and evidence](docs/CURRENT_STATUS.md) and [Circle Developer Grants reviewer brief](docs/CIRCLE_GRANTS.md). Circle Wallets and developer SDK/API are **planned**, not shipped. The contract has **not** received an independent professional audit.
+
 ## Judge Quick Start
 
 For technical reviewers, see the

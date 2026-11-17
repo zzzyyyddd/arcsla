@@ -41,4 +41,4 @@ Version 1 is an immutable contract: no owner, no admin, no fees, no proxy, no pa
 
 ## Reporting
 
-Treat any suspected defect as sensitive. Do not deploy to mainnet until an independent audit is complete.
+Treat any suspected defect as sensitive. The existing mainnet deployment is an unaudited, limited-value MVP demonstration; do not present it as production-ready. Obtain an independent professional audit before onboarding real users or handling meaningful value.

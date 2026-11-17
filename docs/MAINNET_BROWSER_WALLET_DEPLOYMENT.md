@@ -1,5 +1,8 @@
 # Deploying ArcSLA to Arc Mainnet with MetaMask or Rabby
 
+> **HISTORICAL SNAPSHOT — CURRENT STATUS:** This document preserves preparation-time statements and test observations. They are not a description of today's deployment. ArcSLA was subsequently deployed on Arc Mainnet and demonstrated a 0.01 USDC [release](https://explorer.arc.io/tx/0x5aee3380c1c68652e7eca03a7b16bda20617976f90d6d99aa0bed46232f5ad5d) and a separate 0.01 USDC [refund](https://explorer.arc.io/tx/0x6abb3325713d120d1ad1a3949be3ba8df9a26c75b03a957735d2ef5f1245afb6). See [current status](CURRENT_STATUS.md). The lack of an independent professional audit remains unchanged.
+
+
 > Warning: Transactions on mainnet involve real funds and, once submitted, are irreversible. Arc Studio does not deploy to, transact on, sign for, fund, or otherwise interact with mainnet on your behalf. Everything below is run by you, on your machine, with your wallet. ArcSLA has had no independent professional audit. Nothing in this document has been executed: no transaction has been signed or sent.
 
 This procedure deploys the exact reviewed bytecode: the Foundry build of `contracts/ArcSLA.sol` (sha256 `3002abab63b21a7bc525d4953d4b13c83612f3d8c300525737c98e56f11f8730`), with the official Arc USDC `0x3600000000000000000000000000000000000000` as the single constructor argument. It never needs a private key, seed phrase or wallet export: your wallet extension signs, and you approve in its own window.
@@ -133,7 +136,7 @@ Fill `docs/MAINNET_DEPLOYMENT_RECORD.md` (public data only). Then paste the cont
 
 1. Put the verified address and deployment block into `.env.mainnet` (template: `.env.mainnet.example`, caps `VITE_MAX_AGREEMENT_USDC=0.01`, `VITE_MAX_DEADLINE_HOURS=2`) and run `bun run dev:mainnet`, as in `docs/MAINNET_POC_RUNBOOK.md`.
 2. Run the 0.01 USDC smoke test from that runbook with the tester-controlled provider and verifier wallets.
-3. A public working demo and a DoraHacks submission can show the verified Arc Testnet lifecycle evidence now; mainnet claims should wait for the verified mainnet transactions and their explorer links.
+3. This instruction was written before mainnet lifecycle evidence existed. Current mainnet release and refund evidence is documented in `docs/CURRENT_STATUS.md`; do not treat this historical submission guidance as current.
 
 ## 11. Limitations and blockers
 

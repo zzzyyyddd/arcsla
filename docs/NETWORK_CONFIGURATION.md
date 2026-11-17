@@ -52,9 +52,9 @@ Locally: `bun run dev` follows `.env`; `bun run dev:mainnet` loads `.env.mainnet
 - `bun run test:network` runs 13 offline tests of the selection and guard rules (no RPC, no wallet).
 - `scripts/verify-deploy.sh --tx 0x25c9ec657b34e9c91a7c4a836b9b5352a0b0cfb7472071ca26da0289db1e7e66` re-verifies the mainnet deployment read-only.
 
-## Not verified
+## Mainnet evidence and verification limits
 
-The mainnet escrow lifecycle (approve, create, release or refund) has not been run. It is to be tested through the public website with manual wallet confirmation. Mainnet mode has not been exercised in a real browser with a wallet. The earlier testnet check "wrong `VITE_ARCSLA_ADDRESS` shows Contract check failed" (U2 in the testnet evidence) was run on the previous configuration model; with the registry, a wrong override now shows a "Configuration problem" banner instead, and the onchain contract check still guards the registered address.
+The deployed Arc Mainnet contract has recorded a real USDC release and a separate refund. See [current status](CURRENT_STATUS.md) and [Judge Guide](JUDGE_GUIDE.md). These transactions establish the two settlement outcomes, not a comprehensive production wallet/browser compatibility test or a third-party security audit. The earlier testnet check "wrong `VITE_ARCSLA_ADDRESS` shows Contract check failed" (U2 in the testnet evidence) used the previous configuration model; with the registry, a wrong override shows a "Configuration problem" banner instead, and the onchain contract check still guards the registered address.
 
 
 ## Deadline presets and validation (mainnet caps)
