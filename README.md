@@ -6,7 +6,7 @@ Built with [Arc Studio](https://studio.arc.io)
 
 ## Judge Quick Start
 
-For ARC Microgrants Round 2 reviewers, see the
+For technical reviewers, see the
 **[ArcSLA Judge Guide](docs/JUDGE_GUIDE.md)** for the
 Arc Studio project, live application, verified Arc Mainnet
 transactions, Guided Demo instructions, and security limitations.
